@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "361065538700",
+    "firebase_url": "https://limago-2c8d8.firebaseio.com",
+    "project_id": "limago-2c8d8",
+    "storage_bucket": "limago-2c8d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361065538700:android:842e7fc9fd9508dd",
+        "android_client_info": {
+          "package_name": "pe.com.johnson.pablo.limago"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361065538700-0p43a782alegecbfk2nql5n4pd1gmb6q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pe.com.johnson.pablo.limago",
+            "certificate_hash": "C9A32D573A76350DEBDD713CF1F7EBCF907B1DE3"
+          }
+        },
+        {
+          "client_id": "361065538700-7fcsullk6oih0l65n7b771nf2jhinjv4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPPVOx3jm1fsNNzOHg7__ftrgQSj6S09M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
