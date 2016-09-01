@@ -2,13 +2,16 @@ package pe.com.johnson.pablo.limago.models;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
+
 import io.realm.RealmObject;
 
 /**
  * Created by Pablo on 30/08/16.
  */
-public class PoliceStation extends RealmObject {
+public class PoliceStation extends RealmObject implements Serializable{
 
+    public static final String POLICE_STATION = "policeStation";
     @SerializedName("nombre")
     private String name;
     @SerializedName("direccion")

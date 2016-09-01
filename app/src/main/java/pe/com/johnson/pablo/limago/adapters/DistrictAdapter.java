@@ -10,6 +10,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.realm.RealmResults;
 import pe.com.johnson.pablo.limago.R;
+import pe.com.johnson.pablo.limago.interfaces.RecyclerViewClickInterface;
 import pe.com.johnson.pablo.limago.models.District;
 
 /**
@@ -17,10 +18,10 @@ import pe.com.johnson.pablo.limago.models.District;
  */
 public class DistrictAdapter extends RecyclerView.Adapter<DistrictAdapter.ViewHolder> {
 
-    private final DistrictInterface mInterface;
+    private final RecyclerViewClickInterface mInterface;
     RealmResults<District> mDistricts;
 
-    public DistrictAdapter(RealmResults<District> districts, DistrictInterface districtInterface) {
+    public DistrictAdapter(RealmResults<District> districts, RecyclerViewClickInterface districtInterface) {
         mDistricts = districts;
         mInterface = districtInterface;
     }
@@ -36,7 +37,7 @@ public class DistrictAdapter extends RecyclerView.Adapter<DistrictAdapter.ViewHo
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mInterface.onDistrictInterface(mDistricts.get(holder.getAdapterPosition()).getName());
+                mInterface.onItemClick(mDistricts.get(holder.getAdapterPosition()));
             }
         });
     }
@@ -59,9 +60,5 @@ public class DistrictAdapter extends RecyclerView.Adapter<DistrictAdapter.ViewHo
             super(itemView);
             ButterKnife.bind(this, itemView);
         }
-    }
-
-    public interface DistrictInterface {
-        void onDistrictInterface(String districtName);
     }
 }

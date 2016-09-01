@@ -17,6 +17,7 @@ import butterknife.ButterKnife;
 import io.realm.RealmResults;
 import pe.com.johnson.pablo.limago.R;
 import pe.com.johnson.pablo.limago.adapters.DistrictAdapter;
+import pe.com.johnson.pablo.limago.interfaces.RecyclerViewClickInterface;
 import pe.com.johnson.pablo.limago.models.District;
 import pe.com.johnson.pablo.limago.ui.common.LimaGoFragment;
 import pe.com.johnson.pablo.limago.ui.policeStation.PoliceStationFragment;
@@ -54,10 +55,10 @@ public class DistrictFragment extends LimaGoFragment implements DistrictView {
         ButterKnife.bind(this, view);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(getContext());
         districtRecyclerView.setLayoutManager(mLayoutManager);
-        mAdapter = new DistrictAdapter(null, new DistrictAdapter.DistrictInterface() {
+        mAdapter = new DistrictAdapter(null, new RecyclerViewClickInterface<District>() {
             @Override
-            public void onDistrictInterface(String districtName) {
-                fragmentListener.replaceFragment(PoliceStationFragment.newInstance(districtName), true);
+            public void onItemClick(District district) {
+                fragmentListener.replaceFragment(PoliceStationFragment.newInstance(district.getName()), true);
             }
         });
         districtPresenter.retrieveDistricts();

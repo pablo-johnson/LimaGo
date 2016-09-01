@@ -16,9 +16,11 @@ import butterknife.ButterKnife;
 import io.realm.RealmList;
 import pe.com.johnson.pablo.limago.R;
 import pe.com.johnson.pablo.limago.adapters.PoliceStationAdapter;
+import pe.com.johnson.pablo.limago.interfaces.RecyclerViewClickInterface;
 import pe.com.johnson.pablo.limago.models.District;
 import pe.com.johnson.pablo.limago.models.PoliceStation;
 import pe.com.johnson.pablo.limago.ui.common.LimaGoFragment;
+import pe.com.johnson.pablo.limago.ui.policeStation.detail.PoliceStationDetailFragment;
 
 public class PoliceStationFragment extends LimaGoFragment implements PoliceStationView {
 
@@ -55,7 +57,12 @@ public class PoliceStationFragment extends LimaGoFragment implements PoliceStati
         ButterKnife.bind(this, view);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(getContext());
         policeRecyclerView.setLayoutManager(mLayoutManager);
-        mAdapter = new PoliceStationAdapter(null);
+        mAdapter = new PoliceStationAdapter(null, new RecyclerViewClickInterface<PoliceStation>() {
+            @Override
+            public void onItemClick(PoliceStation policeStation) {
+                fragmentListener.replaceFragment(PoliceStationDetailFragment.newInstance(policeStation), true);
+            }
+        });
         policeStationPresenter.retrievePoliceStations(getArguments().getString(District.NAME));
         policeRecyclerView.setAdapter(mAdapter);
         return view;

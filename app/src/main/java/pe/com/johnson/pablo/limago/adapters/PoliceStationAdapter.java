@@ -9,8 +9,8 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.realm.RealmList;
-import io.realm.RealmResults;
 import pe.com.johnson.pablo.limago.R;
+import pe.com.johnson.pablo.limago.interfaces.RecyclerViewClickInterface;
 import pe.com.johnson.pablo.limago.models.PoliceStation;
 
 /**
@@ -18,10 +18,12 @@ import pe.com.johnson.pablo.limago.models.PoliceStation;
  */
 public class PoliceStationAdapter extends RecyclerView.Adapter<PoliceStationAdapter.ViewHolder> {
 
+    private final RecyclerViewClickInterface mInterface;
     RealmList<PoliceStation> mPoliceStations;
 
-    public PoliceStationAdapter(RealmList<PoliceStation> districts) {
+    public PoliceStationAdapter(RealmList<PoliceStation> districts, RecyclerViewClickInterface policeStationInterface) {
         mPoliceStations = districts;
+        mInterface = policeStationInterface;
     }
 
     @Override
@@ -30,8 +32,14 @@ public class PoliceStationAdapter extends RecyclerView.Adapter<PoliceStationAdap
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.policeStationName.setText(mPoliceStations.get(holder.getAdapterPosition()).getName());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mInterface.onItemClick(mPoliceStations.get(holder.getAdapterPosition()));
+            }
+        });
     }
 
     @Override

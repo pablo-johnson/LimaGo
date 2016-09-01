@@ -5,6 +5,6 @@
     <string name="dialog_title_error">Error</string>
     <string name="loadingMessage">Cargando...</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAPPVOx3jm1fsNNzOHg7__ftrgQSj6S09M</string>
 </resources>
