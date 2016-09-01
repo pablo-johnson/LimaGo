@@ -1,0 +1,62 @@
+package pe.com.johnson.pablo.limago;
+
+import com.google.gson.annotations.SerializedName;
+
+import io.realm.RealmObject;
+
+/**
+ * Created by Pablo on 30/08/16.
+ */
+public class Comisaria extends RealmObject {
+
+    @SerializedName("nombre")
+    private String name;
+    @SerializedName("direccion")
+    private String address;
+    @SerializedName("telefono")
+    private String telephone;
+    @SerializedName("latitud")
+    private String latitude;
+    @SerializedName("longitud")
+    private String longitude;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getTelephone() {
+        return telephone;
+    }
+
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
+    }
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
+    }
+
+    public String getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
+    }
+}

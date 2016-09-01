@@ -5,17 +5,8 @@
     android:id="@+id/content_landing"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pe.com.johnson.pablo.limago.LandingActivityFragment"
+    tools:context="pe.com.johnson.pablo.limago.ui.district.DistrictFragment"
     tools:showIn="@layout/activity_landing">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
@@ -24,6 +15,13 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         ads:adSize="BANNER"
-        ads:adUnitId="@string/banner_ad_unit_id"/>
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/districtList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/adView"
+        android:layout_alignParentTop="true" />
 
 </RelativeLayout>
