@@ -1,20 +1,20 @@
-package pe.com.johnson.pablo.limago.ui.district;
+package pe.com.johnson.pablo.limago.models;
 
 import com.google.gson.annotations.SerializedName;
 
 import io.realm.RealmList;
 import io.realm.RealmObject;
-import pe.com.johnson.pablo.limago.Comisaria;
 
 /**
  * Created by Pablo on 30/08/16.
  */
 public class District extends RealmObject {
 
+    public static final String NAME = "name";
     @SerializedName("nombre")
     private String name;
     @SerializedName("comisarias")
-    private RealmList<Comisaria> comisarias;
+    private RealmList<PoliceStation> policeStations;
 
     public String getName() {
         return name;
@@ -24,11 +24,11 @@ public class District extends RealmObject {
         this.name = name;
     }
 
-    public RealmList<Comisaria> getComisarias() {
-        return comisarias;
+    public RealmList<PoliceStation> getPoliceStations() {
+        return policeStations;
     }
 
-    public void setComisarias(RealmList<Comisaria> comisarias) {
-        this.comisarias = comisarias;
+    public void setPoliceStations(RealmList<PoliceStation> policeStations) {
+        this.policeStations = policeStations;
     }
 }

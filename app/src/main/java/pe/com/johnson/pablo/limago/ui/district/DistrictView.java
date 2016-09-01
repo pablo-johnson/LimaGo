@@ -1,6 +1,7 @@
 package pe.com.johnson.pablo.limago.ui.district;
 
 import io.realm.RealmResults;
+import pe.com.johnson.pablo.limago.models.District;
 import pe.com.johnson.pablo.limago.ui.common.LimaGoView;
 
 /**

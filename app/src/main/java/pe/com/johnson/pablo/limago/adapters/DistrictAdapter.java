@@ -10,17 +10,19 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.realm.RealmResults;
 import pe.com.johnson.pablo.limago.R;
-import pe.com.johnson.pablo.limago.ui.district.District;
+import pe.com.johnson.pablo.limago.models.District;
 
 /**
  * Created by Pablo on 30/08/16.
  */
 public class DistrictAdapter extends RecyclerView.Adapter<DistrictAdapter.ViewHolder> {
 
+    private final DistrictInterface mInterface;
     RealmResults<District> mDistricts;
 
-    public DistrictAdapter(RealmResults<District> districts) {
+    public DistrictAdapter(RealmResults<District> districts, DistrictInterface districtInterface) {
         mDistricts = districts;
+        mInterface = districtInterface;
     }
 
     @Override
@@ -29,8 +31,14 @@ public class DistrictAdapter extends RecyclerView.Adapter<DistrictAdapter.ViewHo
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.districtName.setText(mDistricts.get(holder.getAdapterPosition()).getName());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mInterface.onDistrictInterface(mDistricts.get(holder.getAdapterPosition()).getName());
+            }
+        });
     }
 
     @Override
@@ -43,7 +51,7 @@ public class DistrictAdapter extends RecyclerView.Adapter<DistrictAdapter.ViewHo
         notifyDataSetChanged();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    static class ViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.districtName)
         TextView districtName;
 
@@ -51,5 +59,9 @@ public class DistrictAdapter extends RecyclerView.Adapter<DistrictAdapter.ViewHo
             super(itemView);
             ButterKnife.bind(this, itemView);
         }
+    }
+
+    public interface DistrictInterface {
+        void onDistrictInterface(String districtName);
     }
 }

@@ -3,21 +3,13 @@ package pe.com.johnson.pablo.limago.ui.landing;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
-
 import java.io.IOException;
-import java.io.InputStream;
-import java.lang.reflect.Type;
-import java.util.ArrayList;
 
 import pe.com.johnson.pablo.limago.R;
 import pe.com.johnson.pablo.limago.ui.common.LimaGoActivity;
-import pe.com.johnson.pablo.limago.ui.district.District;
 import pe.com.johnson.pablo.limago.ui.district.DistrictFragment;
 import pe.com.johnson.pablo.limago.utils.PreferencesManager;
 

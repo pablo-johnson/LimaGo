@@ -1,4 +1,4 @@
-package pe.com.johnson.pablo.limago;
+package pe.com.johnson.pablo.limago.models;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -7,7 +7,7 @@ import io.realm.RealmObject;
 /**
  * Created by Pablo on 30/08/16.
  */
-public class Comisaria extends RealmObject {
+public class PoliceStation extends RealmObject {
 
     @SerializedName("nombre")
     private String name;
