@@ -1,6 +1,5 @@
 package pe.com.johnson.pablo.limago.ui.district;
 
-import io.realm.RealmChangeListener;
 import io.realm.RealmResults;
 import pe.com.johnson.pablo.limago.ui.common.LimaGoPresenter;
 import pe.com.johnson.pablo.limago.utils.RealmClient;
@@ -16,16 +15,16 @@ public class DistrictPresenter extends LimaGoPresenter<DistrictView> {
 
 
     public void retrieveDistricts() {
-        RealmResults<District> districts = RealmClient.getRealmClient().where(District.class).findAllAsync();
-        //view.updateDistricts(districts);
-
+        RealmResults<District> districts = RealmClient.getRealmClient().where(District.class).findAll();
+        view.updateDistricts(districts);
+        /*
         districts.addChangeListener(new RealmChangeListener<RealmResults<District>>() {
             @Override
             public void onChange(RealmResults<District> districts) {
                 view.updateDistricts(districts);
             }
         });
-
+        */
 
     }
 }
