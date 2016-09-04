@@ -1,8 +1,13 @@
 package pe.com.johnson.pablo.limago.ui.policeStation.detail;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -63,6 +68,7 @@ public class PoliceStationDetailFragment extends LimaGoFragment implements OnMap
         nameView.setText(policeStation.getName());
         addressView.setText(policeStation.getAddress());
         phoneView.setText(policeStation.getTelephone());
+        setHasOptionsMenu(true);
         return view;
     }
 
@@ -103,5 +109,20 @@ public class PoliceStationDetailFragment extends LimaGoFragment implements OnMap
     public void onLowMemory() {
         super.onLowMemory();
         mapView.onLowMemory();
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.menu_detail, menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.action_call) {
+            Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + policeStation.getTelephone()));
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

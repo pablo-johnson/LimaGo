@@ -55,6 +55,12 @@ public class PoliceStationFragment extends LimaGoFragment implements PoliceStati
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_police_station, container, false);
         ButterKnife.bind(this, view);
+        fragmentListener.setTitle(getString(R.string.PoliceStationListTitle) + getArguments().getString(District.NAME));
+        setUpRecyclerView();
+        return view;
+    }
+
+    private void setUpRecyclerView() {
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(getContext());
         policeRecyclerView.setLayoutManager(mLayoutManager);
         mAdapter = new PoliceStationAdapter(null, new RecyclerViewClickInterface<PoliceStation>() {
@@ -65,7 +71,6 @@ public class PoliceStationFragment extends LimaGoFragment implements PoliceStati
         });
         policeStationPresenter.retrievePoliceStations(getArguments().getString(District.NAME));
         policeRecyclerView.setAdapter(mAdapter);
-        return view;
     }
 
     @Override

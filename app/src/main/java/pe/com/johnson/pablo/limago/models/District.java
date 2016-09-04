@@ -4,6 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 import io.realm.RealmList;
 import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
 
 /**
  * Created by Pablo on 30/08/16.
@@ -12,6 +13,7 @@ public class District extends RealmObject {
 
     public static final String NAME = "name";
     @SerializedName("nombre")
+    @PrimaryKey
     private String name;
     @SerializedName("comisarias")
     private RealmList<PoliceStation> policeStations;

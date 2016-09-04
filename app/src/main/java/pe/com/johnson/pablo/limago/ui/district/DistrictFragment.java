@@ -21,6 +21,7 @@ import pe.com.johnson.pablo.limago.interfaces.RecyclerViewClickInterface;
 import pe.com.johnson.pablo.limago.models.District;
 import pe.com.johnson.pablo.limago.ui.common.LimaGoFragment;
 import pe.com.johnson.pablo.limago.ui.policeStation.PoliceStationFragment;
+import pe.com.johnson.pablo.limago.ui.policeStation.detail.PoliceStationDetailFragment;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -58,7 +59,11 @@ public class DistrictFragment extends LimaGoFragment implements DistrictView {
         mAdapter = new DistrictAdapter(null, new RecyclerViewClickInterface<District>() {
             @Override
             public void onItemClick(District district) {
-                fragmentListener.replaceFragment(PoliceStationFragment.newInstance(district.getName()), true);
+                if (district.getPoliceStations().size() == 1) {
+                    fragmentListener.replaceFragment(PoliceStationDetailFragment.newInstance(district.getPoliceStations().first()), true);
+                } else {
+                    fragmentListener.replaceFragment(PoliceStationFragment.newInstance(district.getName()), true);
+                }
             }
         });
         districtPresenter.retrieveDistricts();

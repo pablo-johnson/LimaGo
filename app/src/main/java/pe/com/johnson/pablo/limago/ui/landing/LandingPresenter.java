@@ -47,8 +47,5 @@ public class LandingPresenter extends LimaGoPresenter<LandingView> {
                 view.dismissProgressDialog();
             }
         });
-
-
-        Log.e("Pablo", "Johnson");
     }
 }
