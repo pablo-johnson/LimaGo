@@ -1,9 +1,11 @@
 package pe.com.johnson.pablo.limago.ui.policeStation.detail;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -24,6 +26,7 @@ import com.google.android.gms.maps.model.LatLng;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import pe.com.johnson.pablo.limago.R;
+import pe.com.johnson.pablo.limago.models.District;
 import pe.com.johnson.pablo.limago.models.PoliceStation;
 import pe.com.johnson.pablo.limago.ui.common.LimaGoFragment;
 
@@ -46,10 +49,11 @@ public class PoliceStationDetailFragment extends LimaGoFragment implements OnMap
         // Required empty public constructor
     }
 
-    public static PoliceStationDetailFragment newInstance(PoliceStation policeStation) {
+    public static PoliceStationDetailFragment newInstance(PoliceStation policeStation, String district) {
         PoliceStationDetailFragment fragment = new PoliceStationDetailFragment();
         Bundle args = new Bundle();
         args.putSerializable(PoliceStation.POLICE_STATION, policeStation);
+        args.putString(District.NAME, district);
         fragment.setArguments(args);
         return fragment;
     }
@@ -64,12 +68,17 @@ public class PoliceStationDetailFragment extends LimaGoFragment implements OnMap
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_police_station_detail, container, false);
         ButterKnife.bind(this, view);
+        setUpViews();
+        setHasOptionsMenu(true);
+        return view;
+    }
+
+    private void setUpViews() {
         policeStation = (PoliceStation) getArguments().getSerializable(PoliceStation.POLICE_STATION);
         nameView.setText(policeStation.getName());
         addressView.setText(policeStation.getAddress());
         phoneView.setText(policeStation.getTelephone());
-        setHasOptionsMenu(true);
-        return view;
+        fragmentListener.setTitle(getArguments().getString(District.NAME));
     }
 
     @Override
@@ -120,9 +129,28 @@ public class PoliceStationDetailFragment extends LimaGoFragment implements OnMap
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_call) {
-            Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + policeStation.getTelephone()));
-            startActivity(intent);
+            if (policeStation.getTelephone().split("-").length == 1) {
+                callNumber(policeStation.getTelephone());
+            } else {
+                showChooseNumberDialog(policeStation.getTelephone().split(" - "));
+            }
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void showChooseNumberDialog(final String[] numbers) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setTitle(R.string.entityNumbers)
+                .setItems(numbers, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        callNumber(numbers[which]);
+                    }
+                });
+        builder.create().show();
+    }
+
+    private void callNumber(String number) {
+        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + number));
+        startActivity(intent);
     }
 }

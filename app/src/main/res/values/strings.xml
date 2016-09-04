@@ -9,4 +9,5 @@
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAPPVOx3jm1fsNNzOHg7__ftrgQSj6S09M</string>
     <string name="PoliceStationListTitle">"Comisarías - "</string>
     <string name="action_call">Llamar</string>
+    <string name="entityNumbers">Números:</string>
 </resources>
