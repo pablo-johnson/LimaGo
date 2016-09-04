@@ -23,6 +23,8 @@ import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 
+import java.util.Locale;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import pe.com.johnson.pablo.limago.R;
@@ -134,8 +136,18 @@ public class PoliceStationDetailFragment extends LimaGoFragment implements OnMap
             } else {
                 showChooseNumberDialog(policeStation.getTelephone().split(" - "));
             }
+        } else if (item.getItemId() == R.id.action_go) {
+            showRouteOnGoogleMaps();
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void showRouteOnGoogleMaps() {
+        String uri = String.format(Locale.ENGLISH, "http://maps.google.com/maps?daddr=%s,%s (%s)",
+                policeStation.getLatitude(), policeStation.getLongitude(), policeStation.getName());
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+        intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+        startActivity(intent);
     }
 
     private void showChooseNumberDialog(final String[] numbers) {

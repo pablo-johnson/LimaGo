@@ -7,4 +7,9 @@
         android:icon="@drawable/phone"
         app:showAsAction="always"
         android:title="@string/action_call" />
+    <item
+        android:id="@+id/action_go"
+        android:icon="@drawable/go"
+        app:showAsAction="always"
+        android:title="@string/action_go" />
 </menu>
