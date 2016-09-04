@@ -66,7 +66,7 @@ public class PoliceStationFragment extends LimaGoFragment implements PoliceStati
         mAdapter = new PoliceStationAdapter(null, new RecyclerViewClickInterface<PoliceStation>() {
             @Override
             public void onItemClick(PoliceStation policeStation) {
-                fragmentListener.replaceFragment(PoliceStationDetailFragment.newInstance(policeStation), true);
+                fragmentListener.replaceFragment(PoliceStationDetailFragment.newInstance(policeStation, getArguments().getString(District.NAME)), true);
             }
         });
         policeStationPresenter.retrievePoliceStations(getArguments().getString(District.NAME));
