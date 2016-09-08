@@ -11,7 +11,7 @@ import io.realm.annotations.PrimaryKey;
  */
 public class District extends RealmObject {
 
-    public static final String NAME = "name";
+    public static final String NAME = "districtName";
     @SerializedName("nombre")
     @PrimaryKey
     private String name;

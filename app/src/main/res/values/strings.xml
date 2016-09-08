@@ -11,4 +11,7 @@
     <string name="action_call">Llamar</string>
     <string name="entityNumbers">Números:</string>
     <string name="action_go">Mostrar ruta</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

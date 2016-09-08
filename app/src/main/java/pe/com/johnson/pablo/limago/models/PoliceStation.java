@@ -5,6 +5,7 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 
 import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
 
 /**
  * Created by Pablo on 30/08/16.
@@ -12,6 +13,9 @@ import io.realm.RealmObject;
 public class PoliceStation extends RealmObject implements Serializable {
 
     public transient static final String POLICE_STATION = "policeStation";
+    public static final String NAME = "policeStationName";
+
+    @PrimaryKey
     @SerializedName("nombre")
     private String name;
     @SerializedName("direccion")
@@ -22,6 +26,7 @@ public class PoliceStation extends RealmObject implements Serializable {
     private String latitude;
     @SerializedName("longitud")
     private String longitude;
+
 
     public String getName() {
         return name;

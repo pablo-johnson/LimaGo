@@ -60,7 +60,7 @@ public class DistrictFragment extends LimaGoFragment implements DistrictView {
             @Override
             public void onItemClick(District district) {
                 if (district.getPoliceStations().size() == 1) {
-                    fragmentListener.replaceFragment(PoliceStationDetailFragment.newInstance(district.getPoliceStations().first(),
+                    fragmentListener.replaceFragment(PoliceStationDetailFragment.newInstance(district.getPoliceStations().first().getName(),
                             district.getName()), true);
                 } else {
                     fragmentListener.replaceFragment(PoliceStationFragment.newInstance(district.getName()), true);

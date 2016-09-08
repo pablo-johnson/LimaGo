@@ -1,8 +1,8 @@
 package pe.com.johnson.pablo.limago.ui.policeStation.detail;
 
-import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Point;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -22,18 +22,20 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
-
-import java.util.Locale;
+import com.google.android.gms.maps.model.LatLngBounds;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import pe.com.johnson.pablo.limago.R;
 import pe.com.johnson.pablo.limago.models.District;
 import pe.com.johnson.pablo.limago.models.PoliceStation;
-import pe.com.johnson.pablo.limago.ui.common.LimaGoFragment;
+import pe.com.johnson.pablo.limago.ui.common.LocationFragment;
 
-public class PoliceStationDetailFragment extends LimaGoFragment implements OnMapReadyCallback {
+public class PoliceStationDetailFragment extends LocationFragment implements OnMapReadyCallback, PoliceStationDetailView {
 
     @BindView(R.id.adView)
     AdView mAdView;
@@ -46,16 +48,18 @@ public class PoliceStationDetailFragment extends LimaGoFragment implements OnMap
     @BindView(R.id.phone)
     TextView phoneView;
 
+    private PoliceStationDetailPresenter policeStationPresenter;
     private PoliceStation policeStation;
+    private GoogleMap map;
 
     public PoliceStationDetailFragment() {
         // Required empty public constructor
     }
 
-    public static PoliceStationDetailFragment newInstance(PoliceStation policeStation, String district) {
+    public static PoliceStationDetailFragment newInstance(String policeStationName, String district) {
         PoliceStationDetailFragment fragment = new PoliceStationDetailFragment();
         Bundle args = new Bundle();
-        args.putSerializable(PoliceStation.POLICE_STATION, policeStation);
+        args.putString(PoliceStation.NAME, policeStationName);
         args.putString(District.NAME, district);
         fragment.setArguments(args);
         return fragment;
@@ -64,6 +68,7 @@ public class PoliceStationDetailFragment extends LimaGoFragment implements OnMap
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        policeStationPresenter = new PoliceStationDetailPresenter(this);
     }
 
     @Override
@@ -71,13 +76,12 @@ public class PoliceStationDetailFragment extends LimaGoFragment implements OnMap
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_police_station_detail, container, false);
         ButterKnife.bind(this, view);
-        setUpViews();
         setHasOptionsMenu(true);
+        policeStationPresenter.retrievePoliceStation(getArguments().getString(PoliceStation.NAME));
         return view;
     }
 
-    private void setUpViews() {
-        policeStation = (PoliceStation) getArguments().getSerializable(PoliceStation.POLICE_STATION);
+    private void setUpViews(PoliceStation policeStation) {
         nameView.setText(policeStation.getName());
         addressView.setText(policeStation.getAddress());
         phoneView.setText(policeStation.getTelephone());
@@ -89,7 +93,6 @@ public class PoliceStationDetailFragment extends LimaGoFragment implements OnMap
         super.onViewCreated(view, savedInstanceState);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
-
         mapView.onCreate(savedInstanceState);
         mapView.onResume();
         mapView.getMapAsync(this);//when you already implement OnMapReadyCallback in your fragment
@@ -97,12 +100,47 @@ public class PoliceStationDetailFragment extends LimaGoFragment implements OnMap
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        //googleMap.getUiSettings().setMyLocationButtonEnabled(false);
-        //googleMap.setMyLocationEnabled(true);
+        googleMap.getUiSettings().setMyLocationButtonEnabled(false);
+        googleMap.getUiSettings().setAllGesturesEnabled(false);
+        googleMap.setMyLocationEnabled(true);
         MapsInitializer.initialize(this.getActivity());
+        map = googleMap;
+    }
 
-        LatLng policeStationLocation = new LatLng(Double.valueOf(policeStation.getLatitude()), Double.valueOf(policeStation.getLongitude()));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(policeStationLocation));
+    @Override
+    public void updatePoliceStation(PoliceStation policeStation) {
+        this.policeStation = policeStation;
+        setUpViews(policeStation);
+    }
+
+    @Override
+    protected void onLocationConnected(LatLng myLocation) {
+        zoomMap(myLocation);
+        addPoliceStationMarker();
+    }
+
+    private void addPoliceStationMarker() {
+        map.addMarker(new MarkerOptions()
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.police_station))
+                .position(new LatLng(Double.parseDouble(policeStation.getLatitude()), Double.parseDouble(policeStation.getLongitude())))
+                .title(policeStation.getName()));
+        map.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                return true;
+            }
+        });
+    }
+
+    private void zoomMap(LatLng myLocation) {
+        LatLngBounds bounds = new LatLngBounds.Builder()
+                .include(myLocation)
+                .include(new LatLng(Double.parseDouble(policeStation.getLatitude()), Double.parseDouble(policeStation.getLongitude()))).build();
+
+        Point displaySize = new Point();
+        getActivity().getWindowManager().getDefaultDisplay().getSize(displaySize);
+
+        map.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds, 100));
     }
 
     @Override
@@ -144,15 +182,10 @@ public class PoliceStationDetailFragment extends LimaGoFragment implements OnMap
     }
 
     private void showRouteOnGoogleMaps() {
-        String uri = String.format(Locale.ENGLISH, "http://maps.google.com/maps?daddr=%s,%s (%s)",
-                policeStation.getLatitude(), policeStation.getLongitude(), policeStation.getName());
+        String uri = "geo:0,0?q=" + android.net.Uri.encode(String.format("%s@%s,%s",
+                policeStation.getName(), policeStation.getLatitude(), policeStation.getLongitude()), "UTF-8");
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-        intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
-        try {
-            startActivity(intent);
-        } catch (ActivityNotFoundException ex) {
-            //TODO: Do Something
-        }
+        startActivity(intent);
     }
 
     private void showChooseNumberDialog(final String[] numbers) {
