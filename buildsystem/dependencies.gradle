@@ -1,0 +1,37 @@
+ext {
+
+    daggerVersion = '2.0'
+    butterKnifeVersion = '8.4.0'
+    supportLibrariesVersion = "24.2.0"
+    playServicesLibrariesVersion = "9.4.0"
+    junitVersion = "4.12"
+    gsonVersion = "2.7"
+
+    appDependencies = [
+            daggerCompiler:     "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger:             "com.google.dagger:dagger:${daggerVersion}",
+            butterknifeCompiler: "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+            butterknife:        "com.jakewharton:butterknife:${butterKnifeVersion}",
+            gson:               "com.google.code.gson:gson:${gsonVersion}",
+    ]
+
+    supportDependencies = [
+            appCompatV7:        "com.android.support:appcompat-v7:${supportLibrariesVersion}",
+            design:             "com.android.support:design:${supportLibrariesVersion}",
+            cardviewV7:         "com.android.support:cardview-v7:${supportLibrariesVersion}",
+            supportV4:          "com.android.support:support-v4:${supportLibrariesVersion}",
+    ]
+
+    playServicesDependencies = [
+            firebaseAds:        "com.google.firebase:firebase-ads:${playServicesLibrariesVersion}",
+            playMaps:           "com.google.android.gms:play-services-maps:${playServicesLibrariesVersion}",
+            playLocation:       "com.google.android.gms:play-services-location:${playServicesLibrariesVersion}",
+    ]
+
+    testDependencies = [
+            junit: "junit:junit:${junitVersion}",
+    ]
+
+
+
+}
