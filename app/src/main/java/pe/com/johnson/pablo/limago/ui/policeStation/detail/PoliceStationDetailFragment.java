@@ -74,6 +74,7 @@ public class PoliceStationDetailFragment extends LocationFragment implements OnM
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        super.onCreateView(inflater, container, savedInstanceState);
         View view = inflater.inflate(R.layout.fragment_police_station_detail, container, false);
         ButterKnife.bind(this, view);
         setHasOptionsMenu(true);
@@ -100,6 +101,7 @@ public class PoliceStationDetailFragment extends LocationFragment implements OnM
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
+        requestPermissions();
         googleMap.getUiSettings().setMyLocationButtonEnabled(false);
         googleMap.getUiSettings().setAllGesturesEnabled(false);
         googleMap.setMyLocationEnabled(true);
@@ -110,6 +112,9 @@ public class PoliceStationDetailFragment extends LocationFragment implements OnM
     @Override
     public void updatePoliceStation(PoliceStation policeStation) {
         this.policeStation = policeStation;
+        if (!policeStationHasLocation()) {
+            mapView.setVisibility(View.GONE);
+        }
         setUpViews(policeStation);
     }
 
@@ -120,27 +125,35 @@ public class PoliceStationDetailFragment extends LocationFragment implements OnM
     }
 
     private void addPoliceStationMarker() {
-        map.addMarker(new MarkerOptions()
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.police_station))
-                .position(new LatLng(Double.parseDouble(policeStation.getLatitude()), Double.parseDouble(policeStation.getLongitude())))
-                .title(policeStation.getName()));
-        map.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
-            @Override
-            public boolean onMarkerClick(Marker marker) {
-                return true;
-            }
-        });
+        if (policeStationHasLocation()) {
+            map.addMarker(new MarkerOptions()
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.police_station))
+                    .position(new LatLng(Double.parseDouble(policeStation.getLatitude()), Double.parseDouble(policeStation.getLongitude())))
+                    .title(policeStation.getName()));
+            map.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+                @Override
+                public boolean onMarkerClick(Marker marker) {
+                    return true;
+                }
+            });
+        }
+    }
+
+    private boolean policeStationHasLocation() {
+        return !policeStation.getLatitude().isEmpty() && !policeStation.getLongitude().isEmpty();
     }
 
     private void zoomMap(LatLng myLocation) {
-        LatLngBounds bounds = new LatLngBounds.Builder()
-                .include(myLocation)
-                .include(new LatLng(Double.parseDouble(policeStation.getLatitude()), Double.parseDouble(policeStation.getLongitude()))).build();
+        if (policeStationHasLocation()) {
+            LatLngBounds bounds = new LatLngBounds.Builder()
+                    .include(myLocation)
+                    .include(new LatLng(Double.parseDouble(policeStation.getLatitude()), Double.parseDouble(policeStation.getLongitude()))).build();
 
-        Point displaySize = new Point();
-        getActivity().getWindowManager().getDefaultDisplay().getSize(displaySize);
+            Point displaySize = new Point();
+            getActivity().getWindowManager().getDefaultDisplay().getSize(displaySize);
 
-        map.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds, 100));
+            map.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds, 100));
+        }
     }
 
     @Override
