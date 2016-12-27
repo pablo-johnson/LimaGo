@@ -35,6 +35,9 @@ captures/
 # Intellij
 *.iml
 .idea/workspace.xml
+.idea/libraries/
 
 # Keystore files
 *.jks
+
+.idea/libraries/animated_vector_drawable_24_2_0.xml
