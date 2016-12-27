@@ -1,7 +1,5 @@
 package pe.com.johnson.pablo.limago.ui.landing;
 
-import android.util.Log;
-
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
@@ -11,8 +9,8 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 import io.realm.Realm;
-import pe.com.johnson.pablo.limago.ui.common.LimaGoPresenter;
 import pe.com.johnson.pablo.limago.models.District;
+import pe.com.johnson.pablo.limago.ui.common.LimaGoPresenter;
 import pe.com.johnson.pablo.limago.utils.PreferencesManager;
 import pe.com.johnson.pablo.limago.utils.RealmClient;
 

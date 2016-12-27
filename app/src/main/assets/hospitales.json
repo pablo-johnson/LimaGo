@@ -1,0 +1,210 @@
+[
+	{
+		"nombre": "Hospital Nacional Arzobispo Loayza",
+		"link": "http://www.hospitalloayza.gob.pe/",
+		"direccion": "Av. Alfonso Ugarte 848-Cercado de Lima",
+		"telefono": "Central Telf: 614-4646",
+		"telefono2": "Telf. Emergencia: 330-0241",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital Nacional Dos de Mayo",
+		"link": "http://www.hdosdemayo.gob.pe",
+		"direccion": "Parque de la Historia de la Medicina s/n-Barrios Altos - Lima",
+		"telefono": "Central Telf: 328-002,8",
+		"telefono2": "Telf. Fax: 328-1424",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital de Emergencias José Casimiro Ulloa",
+		"link": "http://www.hejcu.gob.pe/",
+		"direccion": "Av. Roosevelt 6355 – 6375 (Ex Av. República de Panamá) Miraflores – Lima 18 – Perú.",
+		"telefono": "Telf. Emergencias: ,2040 900",
+		"telefono2": "Telefax: 444 3168",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital de Emergencias Pediatricas",
+		"link": "http://www.hep.gob.pe/",
+		"direccion": "Av. Grau 800 - La Victoria ",
+		"telefono": "Telf: 474-9820 / 474,-3200 / 474-9790",
+		"telefono2": "Telefax: 474-9808 ",
+		"telefono3": "Telf. Emergencia: 323-7464",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital Nacional Cayetano Heredia",
+		"link": "http://www.hospitalcayetano.gob.pe/",
+		"direccion": "Av. Honorio Delgado 262 - Urb Ingenieria - San Martín de Porres",
+		"telefono": "Telf-Fax: 482-1410",
+		"telefono2": "Central Telefónica: 482-0402",
+		"telefono3": "Telf. Emergencia: 481-9570",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital Nacional Daniel Alcides Carrión",
+		"link": "http://www.hndac.gob.pe/",
+		"direccion": "Av. Guardia Chalaca 2176 - Bellavista",
+		"telefono": "Telf: 614-7474 Central Telefón,ica",
+		"telefono2": "Telf. Emergencia: Anexo 2137",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital Nacional Hermilio Valdizán",
+		"link": "http://www.hhv.gob.pe/",
+		"direccion": "Carretera Central Km. 3.5 Ate Vitarte",
+		"telefono": "Telf-Fax: 351-7487",
+		"telefono2": "Central Telefónica: 494-2410 / 494-2516 / 494-2429",
+		"telefono3": "Telf. Emergencia: 315-6173",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital Nacional María Auxiliadora",
+		"link": "http://www.minsa.gob.pe/hama/",
+		"direccion": "Calle Miguel Iglesias 968-San Juan de Miraflores",
+		"telefono": "Telf: 217-1818 T,elefax: 217-1828",
+		"telefono2": "",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital Nacional Hipólito Unanue",
+		"link": "http://www.hnhu.gob.pe",
+		"direccion": "Av. Cesar Vallejo 1390-El Agustino",
+		"telefono": "Central Telf: 36,2-7777",
+		"telefono2": "Fax : 362-8619",
+		"telefono3": "Telf. Emergencia: 362-0514",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital Nacional Docente Madre Niño San Bartolomé",
+		"link": "http://www.sanbartolome.gob.pe/",
+		"direccion": "Av. Alfonso Ugarte 825 ",
+		"telefono": "Cercado de Lima",
+		"telefono2": "Telf: 330-9010 Telefax: 431-5131",
+		"telefono3": "Telf. Emergencia: 330-3522",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital San José",
+		"link": "http://www.hsj.gob.pe/",
+		"direccion": "Jr. Las Magnolias 475 - Carmen de la Legua",
+		"telefono": "Central Telf: 31,9-7830 / Telefax: 319-9390 (1140)",
+		"telefono2": "",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital Santa Rosa",
+		"link": "http://www.hsr.gob.pe/",
+		"direccion": "Av. Bolivar Cdra. 8 - Pueblo Libre",
+		"telefono": "Telf: 615-8200 T,elefax: 615-8202",
+		"telefono2": "",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital Sergio E. Bernales",
+		"link": "http://www.hnseb.gob.pe/",
+		"direccion": "Av. Tupac Amaru Km. 14.5 - Comas ",
+		"telefono": "Central Telefónica: 558-0090 / 5,58-0186",
+		"telefono2": "Tel Emergencia: 558-0186 (291)",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital Victor Larco Herrera",
+		"link": "http://www.larcoherrera.gob.pe/",
+		"direccion": "Av. El Ejercito 600-Magdalena del Mar",
+		"telefono": "Central Telefóni,ca: 261-5516 Telefax: 461-4442",
+		"telefono2": "",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital Materno Infantil José Agurto Tello",
+		"link": "Jr. Arequipa 218-Chosica",
+		"direccion": "Tel: 361-0416 Telefax: 361-0416",
+		"telefono": "Tel Emergencia: ,361-0416 (101)",
+		"telefono2": "",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital Materno Infantil José Agurto Tello",
+		"link": "http://www.hospitalpuentepiedra.gob.pe/",
+		"direccion": "Av. Saenz Peña Cdra 6 s/n",
+		"telefono": "Central Telefóni,ca: 548-1898",
+		"telefono2": "",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital Huacho - Red de Salud Huaura Oyón",
+		"link": "http://www.hdhuacho.gob.pe/",
+		"direccion": "José Arnaldo Arámbulo La Rosa N° 251 - Huacho",
+		"telefono": "Central: 232 263,4",
+		"telefono2": "Tel: 232 2351 ",
+		"telefono3": "Telefax: 239 5142 / 232 3181",
+		"telefono4": "Tel Emergencia: 239 6600",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital de Apoyo Rezola Cañete",
+		"link": "http://www.regionlima.gob.pe/hospitalrezola/",
+		"direccion": "Calle San Martín 120 San Vicente-Cañete",
+		"telefono": "Tel: 581-2421 Telefax: 581,-2115 (104)",
+		"telefono2": "Tel Emergencia: 581-2421",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital Materno Infantil José Agurto Tello",
+		"link": "http://www.hospitaldechancay.gob.pe/",
+		"direccion": "Calle Mariscal Sucre s/n - Chancay",
+		"telefono": "Tels: 377-1037 - 37,7-1941",
+		"telefono2": "Telefax: 377-2982",
+		"telefono3": "Tel Emergencia: 3772864",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital San Juan Bautista y SBS Huaral",
+		"link": "http://www.hospitalhuaral.gob.pe/",
+		"direccion": "Calle Tacna 120 Urb. San Juan II Huaral",
+		"telefono": "Telf: 246-2990 T,elefax: 246-1038",
+		"telefono2": "",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital Materno Infantil José Agurto Tello",
+		"link": "Av. Nicolas de Piérola 210 - Barranca",
+		"direccion": "Telf: 235-2241 / 235-2156 Telefax: 235-2075",
+		"telefono": "",
+		"telefono2": "",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital de San Juan de Lurigancho",
+		"link": "http://www.hospitalsjl.gob.pe",
+		"direccion": "Paradero 11 Av. Canto Grande s/n",
+		"telefono": "Tlfnos: 388-6513, / 388-6514 / 387-2300",
+		"telefono2": "",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital de Vitarte",
+		"link": "http://www.hospitalvitarte.gob.pe/portal/ ",
+		"direccion": "Alt. km. 7.5 Carretera Central",
+		"telefono": "Telf: 351-4484 T,elefax: 351-4420",
+		"telefono2": "",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital Materno Infantil José Agurto Tello",
+		"link": "www.hospitalhuaycan.gob.pe ",
+		"direccion": "Av. José Carlos Mariategui s/n Zona B Huaycán - Ate",
+		"telefono": "Telf: 371-6797 T,elefax: 371-6049",
+		"telefono2": "",
+		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital Materno Infantil José Agurto Tello",
+		"link": "Jr. Alfonso Ugarte 350 - Supe",
+		"direccion": "Telf: 236-4322 Telefex: 236-4323",
+		"telefono": "",
+		"telefono2": "",
+		"tipo": "MINSA"
+	}
+]
