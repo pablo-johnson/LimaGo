@@ -17,6 +17,7 @@ public class LandingActivity extends LimaGoActivity implements LandingView {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme_NoActionBar);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -28,10 +29,24 @@ public class LandingActivity extends LimaGoActivity implements LandingView {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            loadInitialDataFile(landingPresenter);
         }
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().add(R.id.fragmentContainer, DistrictFragment.newInstance()).commit();
         }
+    }
+
+    private void loadInitialDataFile(LandingPresenter landingPresenter) {
+        try {
+            landingPresenter.loadInitialData(getAssets().open("comisarias/comisarias.json"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public Context getContext() {
+        return this;
     }
 
     @Override
