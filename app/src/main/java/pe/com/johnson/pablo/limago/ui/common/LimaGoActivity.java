@@ -128,8 +128,9 @@ public class LimaGoActivity extends AppCompatActivity implements LimaGoFragmentL
             case android.R.id.home:
                 onBackPressed();
                 return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
     }
 
 }

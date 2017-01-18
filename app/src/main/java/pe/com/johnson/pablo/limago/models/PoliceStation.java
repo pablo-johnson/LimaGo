@@ -8,11 +8,11 @@ import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
 /**
- * Created by Pablo on 30/08/16.
+ * @author Pablo Johnson (pablo.88j@gmail.com)
  */
 public class PoliceStation extends RealmObject implements Serializable {
 
-    public transient static final String POLICE_STATION = "policeStation";
+    public static final transient String POLICE_STATION = "policeStation";
     public static final String NAME = "policeStationName";
 
     @PrimaryKey

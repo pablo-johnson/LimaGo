@@ -1,9 +1,7 @@
 package pe.com.johnson.pablo.limago.ui.policeStation.detail;
 
-import pe.com.johnson.pablo.limago.models.District;
 import pe.com.johnson.pablo.limago.models.PoliceStation;
 import pe.com.johnson.pablo.limago.ui.common.LimaGoPresenter;
-import pe.com.johnson.pablo.limago.ui.policeStation.PoliceStationView;
 import pe.com.johnson.pablo.limago.utils.RealmClient;
 
 /**
@@ -17,7 +15,7 @@ public class PoliceStationDetailPresenter extends LimaGoPresenter<PoliceStationD
 
     public void retrievePoliceStation(String policeStationName) {
         PoliceStation policeStation = RealmClient.getRealmClient().where(PoliceStation.class).equalTo("name", policeStationName).findFirst();
-        if (policeStation!=null){
+        if (policeStation != null) {
             view.updatePoliceStation(policeStation);
         }
     }

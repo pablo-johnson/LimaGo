@@ -11,7 +11,10 @@ import pe.com.johnson.pablo.limago.R;
  * @author Pablo Johnson (pablo.88j@gmail.com)
  */
 
-public class DialogUtils {
+public final class DialogUtils {
+
+    private DialogUtils() {
+    }
 
     public static AlertDialog createErrorDialog(Activity activity, String message) {
         return createSimpleDialog(activity, activity.getString(R.string.dialog_title_error), message);

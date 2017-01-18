@@ -96,7 +96,7 @@ public class PoliceStationDetailFragment extends LocationFragment implements OnM
         mAdView.loadAd(adRequest);
         mapView.onCreate(savedInstanceState);
         mapView.onResume();
-        mapView.getMapAsync(this);//when you already implement OnMapReadyCallback in your fragment
+        mapView.getMapAsync(this); //when you already implement OnMapReadyCallback in your fragment
     }
 
     @Override

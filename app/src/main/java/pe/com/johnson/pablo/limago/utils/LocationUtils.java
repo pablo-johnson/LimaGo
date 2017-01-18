@@ -16,7 +16,10 @@ import pe.com.johnson.pablo.limago.R;
 /**
  * @author Pablo Johnson (pablo.88j@gmail.com)
  */
-public class LocationUtils {
+public final class LocationUtils {
+
+    private LocationUtils() {
+    }
 
     public static boolean isGpsEnabled(Context context) {
 

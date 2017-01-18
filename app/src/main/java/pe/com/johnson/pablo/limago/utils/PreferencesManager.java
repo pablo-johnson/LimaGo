@@ -8,7 +8,7 @@ import pe.com.johnson.pablo.limago.LimaGoApplication;
 /**
  * @author Pablo Johnson (pablo.88j@gmail.com)
  */
-public class PreferencesManager {
+public final class PreferencesManager {
 
     private static final String DATA_LOADED_KEY = "dataLoadedKey";
     private static PreferencesManager preferencesManager;

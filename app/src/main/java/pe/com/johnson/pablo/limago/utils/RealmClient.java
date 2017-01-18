@@ -1,7 +1,5 @@
 package pe.com.johnson.pablo.limago.utils;
 
-import android.content.Context;
-
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
 import pe.com.johnson.pablo.limago.LimaGoApplication;
@@ -9,7 +7,7 @@ import pe.com.johnson.pablo.limago.LimaGoApplication;
 /**
  * @author Pablo Johnson
  */
-public class RealmClient {
+public final class RealmClient {
 
     private static Realm realm;
 
