@@ -55,12 +55,12 @@ public final class LocationUtils {
         }
     }
 
-    public static void showLocationServicesDialog(Context context, DialogInterface.OnClickListener listener){
-//        AlertDialog alertDialog = new AlertDialog.Builder(context)
-//                .setTitle(context.getString(R.string.locationServicesDisabled))
-//                .setMessage(context.getString(R.string.enableLocationServices))
-//                .setPositiveButton(context.getString(R.string.enable), listener)
-//                .create();
-//        alertDialog.show();
+    public static void showLocationServicesDialog(Context context, DialogInterface.OnClickListener listener) {
+        AlertDialog alertDialog = new AlertDialog.Builder(context)
+                .setTitle(context.getString(R.string.locationServicesDisabled))
+                .setMessage(context.getString(R.string.enableLocationServices))
+                .setPositiveButton(context.getString(R.string.enable), listener)
+                .create();
+        alertDialog.show();
     }
 }
