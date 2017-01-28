@@ -5,6 +5,8 @@
 		"direccion": "Av. Alfonso Ugarte 848-Cercado de Lima",
 		"telefono": "Central Telf: 614-4646",
 		"telefono2": "Telf. Emergencia: 330-0241",
+		"latitud":"-12.0498151",
+		"longitud":"-77.0451127",
 		"tipo": "MINSA"
 	},
 	{
@@ -13,6 +15,8 @@
 		"direccion": "Parque de la Historia de la Medicina s/n-Barrios Altos - Lima",
 		"telefono": "Central Telf: 328-002,8",
 		"telefono2": "Telf. Fax: 328-1424",
+		"latitud":"-12.0559577",
+		"longitud":"-77.0178669",
 		"tipo": "MINSA"
 	},
 	{
@@ -21,6 +25,8 @@
 		"direccion": "Av. Roosevelt 6355 – 6375 (Ex Av. República de Panamá) Miraflores – Lima 18 – Perú.",
 		"telefono": "Telf. Emergencias: ,2040 900",
 		"telefono2": "Telefax: 444 3168",
+		"latitud":"-12.1282196",
+		"longitud":"-77.020167",
 		"tipo": "MINSA"
 	},
 	{
@@ -30,6 +36,8 @@
 		"telefono": "Telf: 474-9820 / 474,-3200 / 474-9790",
 		"telefono2": "Telefax: 474-9808 ",
 		"telefono3": "Telf. Emergencia: 323-7464",
+		"latitud":"-12.0583643",
+		"longitud":"-77.023781",
 		"tipo": "MINSA"
 	},
 	{
@@ -39,6 +47,8 @@
 		"telefono": "Telf-Fax: 482-1410",
 		"telefono2": "Central Telefónica: 482-0402",
 		"telefono3": "Telf. Emergencia: 481-9570",
+		"latitud":"-12.0225725",
+		"longitud":"-77.057566",
 		"tipo": "MINSA"
 	},
 	{
@@ -47,6 +57,8 @@
 		"direccion": "Av. Guardia Chalaca 2176 - Bellavista",
 		"telefono": "Telf: 614-7474 Central Telefón,ica",
 		"telefono2": "Telf. Emergencia: Anexo 2137",
+		"latitud":"-12.0639504",
+		"longitud":"-77.1268444",
 		"tipo": "MINSA"
 	},
 	{
@@ -56,14 +68,18 @@
 		"telefono": "Telf-Fax: 351-7487",
 		"telefono2": "Central Telefónica: 494-2410 / 494-2516 / 494-2429",
 		"telefono3": "Telf. Emergencia: 315-6173",
+		"latitud":"-12.0466355",
+		"longitud":"-76.9477483",
 		"tipo": "MINSA"
 	},
 	{
 		"nombre": "Hospital Nacional María Auxiliadora",
-		"link": "http://www.minsa.gob.pe/hama/",
+		"link": "http://www.hma.gob.pe/",
 		"direccion": "Calle Miguel Iglesias 968-San Juan de Miraflores",
 		"telefono": "Telf: 217-1818 T,elefax: 217-1828",
 		"telefono2": "",
+		"latitud":"-12.1612538",
+		"longitud":"-76.9604814",
 		"tipo": "MINSA"
 	},
 	{
@@ -73,6 +89,8 @@
 		"telefono": "Central Telf: 36,2-7777",
 		"telefono2": "Fax : 362-8619",
 		"telefono3": "Telf. Emergencia: 362-0514",
+		"latitud":"-12.0400272",
+		"longitud":"-76.9958141",
 		"tipo": "MINSA"
 	},
 	{
@@ -82,6 +100,8 @@
 		"telefono": "Cercado de Lima",
 		"telefono2": "Telf: 330-9010 Telefax: 431-5131",
 		"telefono3": "Telf. Emergencia: 330-3522",
+		"latitud":"-12.049901",
+		"longitud":"-77.044121",
 		"tipo": "MINSA"
 	},
 	{
@@ -90,6 +110,8 @@
 		"direccion": "Jr. Las Magnolias 475 - Carmen de la Legua",
 		"telefono": "Central Telf: 31,9-7830 / Telefax: 319-9390 (1140)",
 		"telefono2": "",
+		"latitud":"-12.0427478",
+		"longitud":"-77.1008629",
 		"tipo": "MINSA"
 	},
 	{
@@ -98,6 +120,8 @@
 		"direccion": "Av. Bolivar Cdra. 8 - Pueblo Libre",
 		"telefono": "Telf: 615-8200 T,elefax: 615-8202",
 		"telefono2": "",
+		"latitud":"-12.0724116",
+		"longitud":"-77.0631376",
 		"tipo": "MINSA"
 	},
 	{
@@ -106,6 +130,8 @@
 		"direccion": "Av. Tupac Amaru Km. 14.5 - Comas ",
 		"telefono": "Central Telefónica: 558-0090 / 5,58-0186",
 		"telefono2": "Tel Emergencia: 558-0186 (291)",
+		"latitud":"-11.9146187",
+		"longitud":"-77.0406497",
 		"tipo": "MINSA"
 	},
 	{
@@ -114,22 +140,28 @@
 		"direccion": "Av. El Ejercito 600-Magdalena del Mar",
 		"telefono": "Central Telefóni,ca: 261-5516 Telefax: 461-4442",
 		"telefono2": "",
+		"latitud":"-12.0989274",
+		"longitud":"-77.067933",
 		"tipo": "MINSA"
 	},
 	{
 		"nombre": "Hospital Materno Infantil José Agurto Tello",
-		"link": "Jr. Arequipa 218-Chosica",
-		"direccion": "Tel: 361-0416 Telefax: 361-0416",
-		"telefono": "Tel Emergencia: ,361-0416 (101)",
-		"telefono2": "",
+		"link": "",
+		"direccion": "Jr. Arequipa 218 Chosica Lurigancho",
+		"telefono": "Tel: 361-0416 Telefax: 361-0416",
+		"telefono2": "Tel Emergencia: ,361-0416 (101)",
+		"latitud":"-12.0267878",
+		"longitud":"-77.0142054",
 		"tipo": "MINSA"
 	},
 	{
-		"nombre": "Hospital Materno Infantil José Agurto Tello",
-		"link": "http://www.hospitalpuentepiedra.gob.pe/",
+		"nombre": "Hospital Puente Piedra Carlos Lanfranco La Hoz",
+		"link": "http://www.hcllh.gob.pe/",
 		"direccion": "Av. Saenz Peña Cdra 6 s/n",
 		"telefono": "Central Telefóni,ca: 548-1898",
 		"telefono2": "",
+		"latitud":"-11.8627706",
+		"longitud":"-77.0816053",
 		"tipo": "MINSA"
 	},
 	{
@@ -140,39 +172,50 @@
 		"telefono2": "Tel: 232 2351 ",
 		"telefono3": "Telefax: 239 5142 / 232 3181",
 		"telefono4": "Tel Emergencia: 239 6600",
+		"latitud":"-11.1149268",
+		"longitud":"-77.6096224",
 		"tipo": "MINSA"
 	},
 	{
 		"nombre": "Hospital de Apoyo Rezola Cañete",
-		"link": "http://www.regionlima.gob.pe/hospitalrezola/",
+		"link": "http://www.hospitalrezola.gob.pe/",
 		"direccion": "Calle San Martín 120 San Vicente-Cañete",
 		"telefono": "Tel: 581-2421 Telefax: 581,-2115 (104)",
 		"telefono2": "Tel Emergencia: 581-2421",
+		"latitud":"-13.0762811",
+		"longitud":"-76.3877172",
 		"tipo": "MINSA"
 	},
 	{
-		"nombre": "Hospital Materno Infantil José Agurto Tello",
+		"nombre": "Hospital de Chancay",
 		"link": "http://www.hospitaldechancay.gob.pe/",
 		"direccion": "Calle Mariscal Sucre s/n - Chancay",
 		"telefono": "Tels: 377-1037 - 37,7-1941",
 		"telefono2": "Telefax: 377-2982",
 		"telefono3": "Tel Emergencia: 3772864",
+		"latitud":"-11.5606689",
+		"longitud":"-77.2731502",
 		"tipo": "MINSA"
 	},
 	{
 		"nombre": "Hospital San Juan Bautista y SBS Huaral",
 		"link": "http://www.hospitalhuaral.gob.pe/",
 		"direccion": "Calle Tacna 120 Urb. San Juan II Huaral",
-		"telefono": "Telf: 246-2990 T,elefax: 246-1038",
+		"telefono": "Telf: 246-2990 Telefax: 246-1038",
 		"telefono2": "",
+		"latitud":"-11.5038413",
+		"longitud":"-77.2152068",
 		"tipo": "MINSA"
 	},
 	{
-		"nombre": "Hospital Materno Infantil José Agurto Tello",
-		"link": "Av. Nicolas de Piérola 210 - Barranca",
-		"direccion": "Telf: 235-2241 / 235-2156 Telefax: 235-2075",
+		"nombre": "Hospital de Apoyo de Barranca",
+		"link": "http://hospitalbarranca.gob.pe/portal/",
+		"direccion": "Av. Nicolas de Piérola 210 - Barranca",
+		"telefono": "Telf: 235-2241 / 235-2156 Telefax: 235-2075",
 		"telefono": "",
 		"telefono2": "",
+		"latitud":"-10.7538726",
+		"longitud":"-77.7658195",
 		"tipo": "MINSA"
 	},
 	{
@@ -181,30 +224,83 @@
 		"direccion": "Paradero 11 Av. Canto Grande s/n",
 		"telefono": "Tlfnos: 388-6513, / 388-6514 / 387-2300",
 		"telefono2": "",
+		"latitud":"-11.965869",
+		"longitud":" -77.003594",
 		"tipo": "MINSA"
 	},
 	{
 		"nombre": "Hospital de Vitarte",
-		"link": "http://www.hospitalvitarte.gob.pe/portal/ ",
+		"link": "http://www.hospitalvitarte.gob.pe/portal/",
 		"direccion": "Alt. km. 7.5 Carretera Central",
 		"telefono": "Telf: 351-4484 T,elefax: 351-4420",
 		"telefono2": "",
+		"latitud":"-12.0263424",
+		"longitud":"-76.9221146",
 		"tipo": "MINSA"
 	},
 	{
-		"nombre": "Hospital Materno Infantil José Agurto Tello",
-		"link": "www.hospitalhuaycan.gob.pe ",
+		"nombre": "Hospital de Huaycán",
+		"link": "http://www.hospitalhuaycan.gob.pe",
 		"direccion": "Av. José Carlos Mariategui s/n Zona B Huaycán - Ate",
 		"telefono": "Telf: 371-6797 T,elefax: 371-6049",
 		"telefono2": "",
+		"latitud":"-12.015512",
+		"longitud":"-76.822482",
 		"tipo": "MINSA"
 	},
 	{
-		"nombre": "Hospital Materno Infantil José Agurto Tello",
-		"link": "Jr. Alfonso Ugarte 350 - Supe",
-		"direccion": "Telf: 236-4322 Telefex: 236-4323",
-		"telefono": "",
+		"nombre": "Hospital de Supe",
+		"link": "",
+		"direccion": "Jr. Alfonso Ugarte 350 - Supe",
+		"telefono": "Telf: 236-4322 Telefex: 236-4323",
 		"telefono2": "",
+		"latitud":"-10.797107",
+		"longitud":"-77.720034",
 		"tipo": "MINSA"
+	},
+	{
+		"nombre": "Hospital Nacional Edgardo Rebagliati Martins",
+		"fecha": "Aniversario: 3 de noviembre de 1958",
+		"direccion": "Av. Rebagliati Nº 490 – Jesús María",
+		"telefono": "Central Telefónica: 265.4901",
+		"latitud": "-12.0796051",
+		"longitud": "-77.0423631",
+		"tipo": "ESSALUD"
+	},
+	{
+		"nombre": "Hospital Nacional Guillermo Almenara Irigoyen",
+		"fecha": "Inaugurado el 10 de febrero de 1941",
+		"direccion": "Av. Grau 800 - La Victoria",
+		"telefono": "Central Telefónica 324.2983 - Enlace: 4700",
+		"latitud": "-12.0595657",
+		"longitud": "-77.0244558",
+		"tipo": "ESSALUD"
+	},
+	{
+		"nombre": "Hospital Nacional Alberto Sabogal Sologuren",
+		"fecha": "Inaugurado el 5 de octubre de 1941",
+		"direccion": "Jr. Colina 1081 – Bellavista Callao",
+		"telefono": "Central Telefónica: 429.7744 – enlace 5016",
+		"latitud": "-12.0642673",
+		"longitud": "-77.1244632",
+		"tipo": "ESSALUD"
+	},
+	{
+		"nombre": "Instituto Nacional Cardiovascular (INCOR)",
+		"fecha": "Inauguración del INCOR: 12 de agosto de 1992",
+		"direccion": "Jr. Coronel Zegarra 417 - Jesús María ",
+		"telefono": "Central Telefónica: 411.1560",
+		"latitud": "-12.0772269",
+		"longitud": "-77.0421976",
+		"tipo": "ESSALUD"
+	},
+	{
+		"nombre": "Centro Nacional De Salud Renal",
+		"fecha": "Aniversario: 14 de julio de 1994 ",
+		"direccion": "Calle Coronel Zegarra Nº 223 – 227 - Jesús María",
+		"telefono": "Central Telefónica: 471-9999 Anexo 1401 – 1402",
+		"latitud": "-12.0774174",
+		"longitud": "-77.0409205",
+		"tipo": "ESSALUD"
 	}
 ]

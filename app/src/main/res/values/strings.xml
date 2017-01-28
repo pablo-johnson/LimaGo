@@ -12,6 +12,12 @@
     <string name="entityNumbers">Números:</string>
     <string name="action_go">Mostrar ruta</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="path_search">M13.3843083,13.3956843 C11.233862,15.5399983 7.7581039,15.5381046 5.61000013,13.3900003 C3.46000004,11.2399998 3.46000004,7.76000023 5.61000013,5.61000013 C7.76000023,3.46000004 11.2400007,3.46000004 13.3900003,5.61000013 C15.54,7.76000023 15.5400009,11.2400007 13.3900003,13.3900003 C13.388104,13.3918967 13.3862067,13.3937913 13.3843083,13.3956843 C15.1427975,15.1834093 19.6826174,19.798706 19.6826172,19.7987061 L13.3843085,13.3956846 L13.3843083,13.3956843 Z</string>
+    <string name="search">search</string>
+    <string name="transition_search_back" translatable="false">transition_search_back</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="locationServicesDisabled">GPS desactivado</string>
+    <string name="enableLocationServices">Desea activarlo?</string>
+    <string name="enable">Activar</string>
+    <string name="searchHint">Buscar en LimaGo</string>
 </resources>

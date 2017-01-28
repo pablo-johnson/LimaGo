@@ -1,0 +1,474 @@
+[
+	{
+		"nombre": "Roma Nº2",
+		"jefe": "TNTE BRIGADIER CAVERO EGUSQUIZA GONZALES, SANDRO PAUL",
+		"direccion": "Jr. Junin No. 560  Cercado de Lima",
+		"telefono": "4265289",
+		"telefono2": "4270486",
+		"fecha": "15/04/1866"
+		-12.047990, -77.026252
+	},
+	{
+		"nombre": "France Nº3",
+		"jefe": "TNTE BRIGADIER ZEVALLOS ARBULU, LUIS EDUARDO MARTÍN",
+		"direccion": "Jr. Moquegua No. 240  Cercado de Lima",
+		"telefono": "4279161",
+		"telefono2": "4269445",
+		"fecha": "20/04/1866"
+		-12.049001, -77.035256
+	},
+	{
+		"nombre": "Lima Nº4",
+		"jefe": "TNTE BRIGADIER PANTA GUERRERO, MANUEL HUMBERTO",
+		"direccion": "Jr. Manuel Candamo No. 455",
+		"telefono": "4716442",
+		"fecha": "21/04/1866"
+		-12.081875, -77.032198
+	},
+	{
+		"nombre": "Victoria Nº8",
+		"jefe": "TNTE BRIGADIER RISCHMOLLER ATOCHA, GERARDO AMADOR",
+		"direccion": "Av. Manuel Cisneros No. 597  La Victoria",
+		"telefono": "3245858",
+		"telefono2": "3238341",
+		"fecha": "12/02/1873"
+		-12.067537, -77.021216
+	},
+	{
+		"nombre": "Salvadora Lima Nº10",
+		"jefe": "BRIGADIER VILLEGAS CASTAÑEDA, CÉSAR RUDECINDO",
+		"direccion": "Jr. De La Unión No. 1027  Cercado de Lima",
+		"telefono": "4268338",
+		"fecha": "01/01/1874"
+		-12.052064, -77.035431
+	},
+	{
+		"nombre": "Internacional Nº14",
+		"jefe": "TNTE BRIGADIER CANAL ZEVALLOS, JORGE RENÁN",
+		"direccion": "Jr. Rebeca Oquendo No. 360  Breña",
+		"telefono": "4231100",
+		"telefono2": "3323899",
+		"fecha": "17/11/1893"
+		-12.059908, -77.045865
+	},
+	{
+		"nombre": "Rímac Nº21",
+		"jefe": "TNTE BRIGADIER BUSTAMANTE RIVERA , RICARDO DAVID",
+		"direccion": "Jr. Trujillo No. 836  Rimac",
+		"telefono": "4813183",
+		"telefono2": "3826424",
+		"fecha": "29/07/1920"
+		-12.036215, -77.028433
+	},
+	{
+		"nombre": "Chosica Nº32",
+		"jefe": "TNTE BRIGADIER DELGADO CONTRERAS, CÉSAR ERNESTO",
+		"direccion": "Jr. Callao No. 168  Chosica",
+		"telefono": "3610260",
+		"fecha": "14/10/1944"
+		-11.936608, -76.694262
+	},
+	{
+		"nombre": "Magdalena Nº36",
+		"jefe": "BRIGADIER VALERO ALAMO, SANTIAGO LIZANDRO",
+		"direccion": "Av. Sucre No. 899  Pueblo Libre",
+		"telefono": "2617139",
+		"telefono2": "4613998",
+		"fecha": "21/07/1948"
+		-12.080187, -77.065874
+	},
+	{
+		"nombre": "San Miguel Nº83",
+		"jefe": "TNTE BRIGADIER TUME ZEGARRA, MARTÍN ANTONIO",
+		"direccion": "Jr. Sucre Cdra. 7  San Miguel",
+		"telefono": "4608693",
+		"telefono2": "2632020",
+		"fecha": "15/05/1993"
+		-12.085693, -77.075970
+	},
+	{
+		"nombre": "San Isidro Nº100",
+		"jefe": "TNTE BRIGADIER ZARAK BUDGE, PAUL",
+		"direccion": "Calle Godofredo Garcia 439, San Isidro",
+		"telefono": "2640339",
+		"fecha": "05/12/1995"
+		-12.107565, -77.055611
+	},
+	{
+		"nombre": "Brig.Gnral CBP Virgilio Airaldi P.CHACLACAYO Nº115",
+		"jefe": "CAPITÁN CBP ANGELES MESIAS , FRANCISCO RAFAEL",
+		"direccion": "Av. Nicolas Ayllon Cdra. 14, esquina con Av. Los Geranios, Chaclacayo",
+		"telefono": "3583234",
+		"fecha": "06/01/1997"
+		-11.974149, -76.762317
+	},
+	{
+		"nombre": "San Juan De Lurigancho Nº121",
+		"jefe": "CAPITÁN CBP GARZON CACHIQUE, JERRY",
+		"direccion": "Av. El Bosque No. 341, Urb. Canto Grande",
+		"telefono": "3871120",
+		"fecha": "24/05/1997"
+		-11.978827, -77.005837
+	},
+	{
+		"nombre": "Salamanca Nº127",
+		"jefe": "TNTE BRIGADIER AZABACHE ASMAT, JOSÉ LUIS",
+		"direccion": "Las Dalias No. 180 Parque de Monterrico  Salamanca",
+		"telefono": "4341615",
+		"fecha": "21/12/1997"
+		-12.077136, -76.976365
+	},
+	{
+		"nombre": "Técnico Carlos León Delgado Nº138",
+		"jefe": "CAPITÁN CBP ROMERO HINOSTROZA, ALEXANDERS",
+		"direccion": "Jr. Los Pinos 2da Cdra. Esq Jr. Inclan, Urb. Los Ficus  Santa Anita",
+		"telefono": "4781099",
+		"telefono2": "4782401",
+		"fecha": "12/09/1998"
+		-12.049575, -76.975110
+	},
+	{
+		"nombre": "Cap. CBP Andrés Roman Gutierrez 169 ATE Nº169",
+		"jefe": "CAPITÁN CBP HERHUAY MANUELO, GEREMIAS ALEX",
+		"direccion": "Av. Santa Ana Nro. 940, Puerta 4 Mercado de Productores  Ate",
+		"telefono": "3544487",
+		"fecha": "30/12/2000"
+		-12.040337, -76.949846
+	},
+	{
+		"nombre": "El Agustino Nº176",
+		"jefe": "TENIENTE CBP LOPEZ CHAVEZ, JORGE LUIS",
+		"direccion": "Jr. Maria Baldarrago s/n Cdra. 5 Urb. La Corporación  El Agustino",
+		"telefono": "3274669",
+		"fecha": "30/04/2005"
+		-12.051182, -76.997305
+	},
+	{
+		"nombre": "JESÚS MARÍA WALDO HERNAN OLIVOS V. Nº202",
+		"jefe": "BRIGADIER VATTUONE NALVARTE, ENZO ANTONIO",
+		"direccion": "Jirón Capac Yupanqui, cuadra 16  Jesus Maria",
+		"telefono": "2620516",
+		"fecha": "16/10/2013"
+		-12.082348, -77.041956
+	},
+	{
+		"nombre": "Unión Chalaca Nº1",
+		"jefe": "TNTE BRIGADIER JARA TORRES, SANDRO DAVID",
+		"direccion": "Av. Dos de Mayo No. 375  Cercado del Callaov",
+		"telefono": "4290210",
+		"telefono2": "4530970",
+		"fecha": "05/12/1860"
+		-12.058185, -77.142893
+	},
+	{
+		"nombre": "Italia Nº5",
+		"jefe": "TENIENTE CBP DAVILA ORDINOLA , FREDY YSAIAS",
+		"direccion": "Av. Alejandro Granda s/n Mz. E Lt. 3, Urb. Stella Maris",
+		"telefono": "4290318",
+		"telefono2": "4534945",
+		"fecha": "28/10/1868"
+		-12.059356, -77.117381
+	},
+	{
+		"nombre": "Garibaldi Nº7",
+		"jefe": "BRIGADIER MEJIA PRADA, LEWIS RICARDO",
+		"direccion": "Av. La Marina Cdra. 40",
+		"telefono": "4985474",
+		"telefono2": "4984370",
+		"fecha": "25/01/1873"
+		-12.068453, -77.113291
+	},
+	{
+		"nombre": "Salvadora Callao Nº9",
+		"jefe": "TNTE BRIGADIER PAREDES NICOLICH, ERASMO IVAN",
+		"direccion": "Jr. Pedro Ruiz Gallo No. 246",
+		"telefono": "4290319",
+		"telefono2": "4536752",
+		"fecha": "05/06/1873"
+		-12.012147, -77.103604
+	},
+	{
+		"nombre": "Callao Nº15",
+		"jefe": "TNTE BRIGADIER CARRANZA ANTON, EDUARDO MARTÍN",
+		"direccion": "Jr. Los Heros No. 151",
+		"telefono": "4290320",
+		"telefono2": "4534549",
+		"fecha": "10/03/1864"
+		-12.061068, -77.131010
+	},
+	{
+		"nombre": "Perú Nº18",
+		"jefe": "TENIENTE CBP GUERRERO RILL, CÉSAR ORLANDO",
+		"direccion": "Jr. Puno No. 137",
+		"telefono": "4655183",
+		"telefono2": "4532557",
+		"fecha": "04/11/1907"
+		-12.059554, -77.140033
+	},
+	{
+		"nombre": "La Punta Nº34",
+		"jefe": "TNTE BRIGADIER FLORES MONTUFAR GUTIERREZ, JORGE MANUEL",
+		"direccion": "Av. Bolognesi No. 133",
+		"telefono": "4292998",
+		"telefono2": "4536017",
+		"fecha": "15/11/1945"
+		-12.072143, -77.164538
+	},
+	{
+		"nombre": "Antonio Alarco Espinoza Nº60",
+		"jefe": "TNTE BRIGADIER PALMA CAMARGO, EDGAR MARTÍN FRANCISCO",
+		"direccion": "Jr. Cóndores No. 591",
+		"telefono": "4514830",
+		"telefono2": "4525279",
+		"fecha": "19/01/1972"
+	},
+	{
+		"nombre": "Técnico Lorenzo Giraldo Vega Nº75",
+		"jefe": "TENIENTE CBP MELGAREJO RODRIGUEZ, ELIAS JUNIOR",
+		"direccion": "Pedro Beltran s/n",
+		"telefono": "5538278",
+		"telefono2": "5537735",
+		"fecha": "10/08/1986"
+	},
+	{
+		"nombre": "BRIGADIER CBP ALEJANDRO REYES LEON Nº184",
+		"jefe": "TENIENTE CBP URETA ROJAS, JIMMY STEVENS",
+		"direccion": "Nuestra Señora de las Mercedes  Mi Perú",
+		"telefono": "3371058",
+		"fecha": "09/02/2008"
+	},
+	{
+		"nombre": "ADOLFO MARTIN KING LEOANE Nº207",
+		"jefe": "TENIENTE CBP CUEVA PRADO, JOSE ENRRIQUE",
+		"direccion": "Av. Panamá Mz. K, Lote 1 A del AA HH Nuevo Progreso  Ventanilla",
+		"telefono": "",
+		"fecha": "15/04/2014"
+	},
+	{
+		"nombre": "Garibaldi Nº6",
+		"jefe": "TNTE BRIGADIER VILCHEZ TELLO, WALTER DANIEL",
+		"direccion": "Av. Huaylas No. 298",
+		"telefono": "4670729",
+		"telefono2": "2524761",
+		"fecha": "13/10/1872"
+	},
+	{
+		"nombre": "Cosmopolita Nº11",
+		"jefe": "TNTE BRIGADIER LLONA CARDENAS, HOLGER CHRISTIAN",
+		"direccion": "Calle Galeno s/n",
+		"telefono": "2260636",
+		"fecha": "14/08/1877"
+	},
+	{
+		"nombre": "Olaya Nº13",
+		"jefe": "TNTE BRIGADIER LOPEZ SZWEDE, MARCOS ZYGMUNT",
+		"direccion": "Av. Lima No. 227",
+		"telefono": "4670638",
+		"telefono2": "2524760",
+		"fecha": "29/06/1890"
+	},
+	{
+		"nombre": "Grau Nº16",
+		"jefe": "TNTE BRIGADIER CASTRO CORONEL, ALDO FÉLIX FERNANDO",
+		"direccion": "Plaza Espinoza No. 106",
+		"telefono": "2473031",
+		"telefono2": "2473258",
+		"fecha": "08/02/1898"
+	},
+	{
+		"nombre": "Miraflores Nº28",
+		"jefe": "TNTE BRIGADIER ERKEN BOSMANS, JAVIER FRANCISCO",
+		"direccion": "Av. Mariscal Caceres No. 172",
+		"telefono": "4457447",
+		"telefono2": "2425823",
+		"fecha": "13/11/1939"
+	},
+	{
+		"nombre": "Cañete Nº49",
+		"jefe": "TNTE BRIGADIER CARASSA ROMERO, JUAN URBANO",
+		"direccion": "Jr. 28 de Julio No. 809",
+		"telefono": "5812004",
+		"telefono2": "5811144",
+		"fecha": "04/06/1960"
+	},
+	{
+		"nombre": "La Molina Nº96CAPITÁN CBP DIAZ MENDOZA, CARLOS ALBERTO",
+		"jefe": "Av. La Chalana/Esq. Av. El Remo S/N S/N Urb. Las Lagunas  La Molina (costado de la Municipalidad)",
+		"direccion": "3680733",
+		"telefono2": "3685238",
+		"telefono": "28/02/1995",
+		"fecha": ""
+	},
+	{
+		"nombre": "Villa El Salvador Nº105",
+		"jefe": "CAPITÁN CBP SOPLIN SANCHEZ, CÉSAR MANUEL",
+		"direccion": "Sector 2, Grupo 15",
+		"telefono": "2873087",
+		"telefono2": "2877423",
+		"fecha": "14/04/1996"
+	},
+	{
+		"nombre": "Villa María Del Triunfo Nº106",
+		"jefe": "CAPITÁN CBP GONZALES VARGAS, JOSÉ CARLOS",
+		"direccion": "Cdra. 15 Av. Defensores Lima",
+		"telefono": "4960572",
+		"telefono2": "2812108",
+		"fecha": "19/04/1996"
+	},
+	{
+		"nombre": "San Pedro De Mala Nº111",
+		"jefe": "TENIENTE CBP PIO MACAVILCA , JULIO JUSTO",
+		"direccion": "Escala Baja, Camal Nuevo Antigua Carretera Panamericana",
+		"telefono": "5308160",
+		"fecha": "09/10/1996"
+	},
+	{
+		"nombre": "San Juan De Miraflores Nº120",
+		"jefe": "TNTE BRIGADIER VENERO BENAVENTE , JUAN RICARDO",
+		"direccion": "Esq. Paita con Sullana, Urb. Industrial",
+		"telefono": "2768290",
+		"fecha": "26/04/1997"
+	},
+	{
+		"nombre": "Punta Negra Nº125",
+		"jefe": "TNTE BRIGADIER QUEZADA OLIVEYRA , MARIETA IRIS",
+		"direccion": "Guanay Sur No. 360",
+		"telefono": "2315459",
+		"fecha": "21/09/1997"
+	},
+	{
+		"nombre": "San Pedro De Lurín Nº129",
+		"jefe": "CAPITÁN CBP QUEVEDO GOMEZ, JULIO ISIDRO",
+		"direccion": "Jr. Bolívar s/n",
+		"telefono": "4303120",
+		"fecha": "27/12/1997"
+	},
+	{
+		"nombre": "Nuestra Señora De La Asunción De María Nº133",
+		"jefe": "CAPITÁN CBP ARANA CARDENAS , ALEJANDRO ANTHONY",
+		"direccion": "Jr. Huancavelica s/n Chilca Pueblo",
+		"telefono": "5305300",
+		"telefono2": "5305510",
+		"fecha": "25/08/1998"
+	},
+	{
+		"nombre": "Santiago Apóstol Nº134",
+		"jefe": "CAPITÁN CBP AGUILAR GARCIA, JORGE ALFREDO",
+		"direccion": "Monte de los Olivos Cdra. 9, Urb. Prolog. Benavides 2da Etapa",
+		"telefono": "2745119",
+		"telefono2": "2746066",
+		"fecha": "29/08/1998"
+	},
+	{
+		"nombre": "Nuevo Milenio Nº155",
+		"jefe": "TENIENTE CBP ALDANA BORJAS, RAUL GERARDO",
+		"direccion": "Av. Atocongo s/n Frente a Cementos Lima",
+		"telefono": "2936643",
+		"fecha": "31/03/2000"
+	},
+	{
+		"nombre": "Pachacamac Nº160",
+		"jefe": "TNTE BRIGADIER ULLOA MANOZALVA, LUIS ROBERTO",
+		"direccion": "Prolog. Los Suspiros Mz. 41 Lt. 12",
+		"telefono": "2312163",
+		"fecha": "05/08/2000"
+	},
+	{
+		"nombre": "Virgen del Carmen Nº183",
+		"jefe": "SUBTENIENTE CBP LAGOS MENESES, LUIS ALBERTO",
+		"direccion": "AV Benigno Rios N°296 ImperialCañete",
+		"telefono": "12848270",
+		"fecha": "28/06/2007"
+	},
+	{
+		"nombre": "Huacho Nº20",
+		"jefe": "BRIGADIER ESCUDERO ROSEMBERG, ABEL ADOLFO",
+		"direccion": "Jr. Echenique No. 355",
+		"telefono": "2323333",
+		"fecha": "18/02/1919"
+	},
+	{
+		"nombre": "Huaral Nº44TENIENTE CBP TORRES PASTOR , JOSE ENRIQUE",
+		"jefe": "Calle Los Geranios # 294 esquina con Calle Las Dalias # 151  Residencial Huaral",
+		"direccion": "2460707",
+		"telefono": "17/05/1957",
+		"fecha": ""
+	},
+	{
+		"nombre": "San Martín De Porres Nº65",
+		"jefe": "TNTE BRIGADIER MORALES CHUMPITAZ, JUAN CARLOS",
+		"direccion": "Jr. San Lucas Nº 401 1era entrada Pallao",
+		"telefono": "4811089",
+		"fecha": "14/12/1974"
+	},
+	{
+		"nombre": "Barranca Nº73",
+		"jefe": "TENIENTE CBP CASTRO BALABARCA, ELIZABETH VANESSA",
+		"direccion": "Plaza de Armas s/n",
+		"telefono": "2352333",
+		"fecha": "29/08/1985"
+	},
+	{
+		"nombre": "Santiago Távara Renovales Nº80",
+		"jefe": "TNTE BRIGADIER MORENO DORADOR, LUIS ALBERTO",
+		"direccion": "Calle Miguel Grau N° 303  Chancay",
+		"telefono": "3771300",
+		"fecha": "20/04/1991"
+	},
+	{
+		"nombre": "Salvadora Paramonga Nº81",
+		"jefe": "TNTE BRIGADIER AGUIRRE VEGA, ROLANDO",
+		"direccion": "AVENIDA CENTRAL 131 PARAMONGA.",
+		"telefono": "2360329",
+		"fecha": "27/04/1991"
+	},
+	{
+		"nombre": "Pativilca  Simón Bolívar Nº91",
+		"jefe": "TENIENTE CBP SOLORZANO REYES, ALEX WILMER",
+		"direccion": "Bolivar No. 232",
+		"telefono": "2363250",
+		"fecha": "20/08/1994"
+	},
+	{
+		"nombre": "Comas Nº124",
+		"jefe": "TNTE BRIGADIER RAMIREZ BLANCO, JORGE LUIS",
+		"direccion": "Manuel Aranguri No. 699",
+		"telefono": "5374079",
+		"fecha": "18/09/1997"
+	},
+	{
+		"nombre": "Puente Piedra  Brig Julio Upiachihua C. Nº150",
+		"jefe": "CAPITÁN CBP BARRENECHEA MINAYA, JOSÉ RICHARD",
+		"direccion": "José Gálvez No. 315",
+		"telefono": "5481263",
+		"fecha": "25/09/1999"
+	},
+	{
+		"nombre": "Los Olivos Nº161",
+		"jefe": "TNTE BRIGADIER CABALLERO ALVAREZ, WILFREDO DAVID",
+		"direccion": "Mz. K Lt. 15 3era Etapa El Trebol, Calle 36, Alt. Cdra. 8 Av. Tomas Valle",
+		"telefono": "5331051",
+		"fecha": "30/08/2000"
+	},
+	{
+		"nombre": "Ancón Nº163",
+		"jefe": "TENIENTE CBP GUERRERO LOPEZ, MANUEL EMERSON",
+		"direccion": "Av. Paredez Roncal 755  Cercado",
+		"telefono": "5521368",
+		"fecha": "05/11/2000"
+	},
+	{
+		"nombre": "Carabayllo Nº164",
+		"jefe": "SUBTENIENTE CBP DIEZCANSECO SANCHEZ, CARLOS",
+		"direccion": "Jr. No me Olvides s/n, Urb. Santa Isabel",
+		"telefono": "5440566",
+		"fecha": "06/11/2000"
+	},
+	{
+		"nombre": "Independencia Nº168",
+		"jefe": "CAPITÁN CBP APARICIO ROMERO, HELBERTH RENZO",
+		"direccion": "Jr. Los Tumbos 1ra Cdra S/N Espal Municipalidad",
+		"telefono": "5220642",
+		"fecha": "29/12/2000"
+	}
+]

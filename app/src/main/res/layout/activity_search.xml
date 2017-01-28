@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="pe.com.johnson.pablo.limago.ui.search.SearchActivity">
+
+    <FrameLayout
+        android:id="@+id/search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/z_app_bar"
+        android:outlineProvider="bounds"
+        android:theme="@style/SearchViewTheme"
+        android:transitionGroup="false">
+
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/padding_normal"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@color/colorPrimaryDark"
+            android:queryHint="@string/searchHint"
+            android:transitionGroup="true"
+            app:queryBackground="@color/colorPrimaryDark"
+            app:queryHint="@string/searchHint" />
+
+        <!-- wrapping layout needed for the touch ripple -->
+        <FrameLayout
+            android:id="@+id/searchback_container"
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:paddingStart="4dp">
+
+            <ImageButton
+                android:id="@+id/searchback"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_arrow_back_padded"
+                android:transitionName="@string/transition_search_back" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/searchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</android.support.design.widget.CoordinatorLayout>
