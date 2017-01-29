@@ -3,11 +3,11 @@ package pe.com.johnson.pablo.limago.di;
 import javax.inject.Singleton;
 
 import dagger.Component;
-import pe.com.johnson.pablo.limago.ui.district.DistrictPresenter;
-import pe.com.johnson.pablo.limago.ui.landing.LandingActivity;
-import pe.com.johnson.pablo.limago.ui.landing.LandingPresenter;
-import pe.com.johnson.pablo.limago.ui.policeStation.PoliceStationPresenter;
-import pe.com.johnson.pablo.limago.ui.policeStation.detail.PoliceStationDetailPresenter;
+import pe.com.johnson.pablo.limago.view.ui.district.DistrictPresenter;
+import pe.com.johnson.pablo.limago.view.ui.landing.LandingActivity;
+import pe.com.johnson.pablo.limago.view.ui.landing.LandingPresenter;
+import pe.com.johnson.pablo.limago.view.ui.policeStation.PoliceStationPresenter;
+import pe.com.johnson.pablo.limago.view.ui.policeStation.detail.PoliceStationDetailPresenter;
 
 /**
  * @author Pablo Johnson (pablo.88j@gmail.com)

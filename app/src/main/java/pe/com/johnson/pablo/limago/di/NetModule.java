@@ -11,9 +11,9 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 import io.realm.Realm;
-import pe.com.johnson.pablo.limago.helpers.DefaultSharedPreferencesHelper;
-import pe.com.johnson.pablo.limago.interfaces.SharedPreferencesHelper;
-import pe.com.johnson.pablo.limago.helpers.RealmClientHelper;
+import pe.com.johnson.pablo.limago.view.helpers.DefaultSharedPreferencesHelper;
+import pe.com.johnson.pablo.limago.view.interfaces.SharedPreferencesHelper;
+import pe.com.johnson.pablo.limago.view.helpers.RealmClientHelper;
 
 /**
  * @author Pablo Johnson (pablo.88j@gmail.com)
@@ -28,7 +28,6 @@ public class NetModule {
         this.mBaseUrl = baseUrl;
     }
 
-    // Dagger will only look for methods annotated with @Provides
     @Provides
     @Singleton
     // Application reference must come from AppModule.class

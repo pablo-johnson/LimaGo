@@ -5,7 +5,7 @@
     android:id="@+id/content_landing"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="pe.com.johnson.pablo.limago.ui.district.DistrictFragment"
+    tools:context=".view.ui.district.DistrictFragment"
     tools:showIn="@layout/activity_landing">
 
     <com.google.android.gms.ads.AdView

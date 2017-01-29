@@ -16,17 +16,13 @@ public class LimaGoApplication extends Application {
 
     private NetComponent mNetComponent;
 
-    private static Context context;
-
     @Override
     public void onCreate() {
         super.onCreate();
-        context = this;
         initializeInjector();
     }
 
     private void initializeInjector() {
-        // Dagger%COMPONENT_NAME%
         mNetComponent = DaggerNetComponent.builder()
                 // list of modules that are part of this component need to be created here too
                 .appModule(new AppModule(this)) // This also corresponds to the name of your module: %component_name%Module
@@ -36,9 +32,5 @@ public class LimaGoApplication extends Application {
 
     public NetComponent getNetComponent() {
         return mNetComponent;
-    }
-
-    public static Context getContext() {
-        return context;
     }
 }

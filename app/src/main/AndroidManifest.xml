@@ -27,7 +27,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.landing.LandingActivity"
+            android:name=".view.ui.landing.LandingActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.Launcher">
             <intent-filter>
@@ -38,7 +38,7 @@
         </activity>
 
         <activity
-            android:name=".ui.search.SearchActivity"
+            android:name=".view.ui.search.SearchActivity"
             android:label="@string/title_activity_search"
             android:theme="@style/AppTheme.NoActionBar"></activity>
 
