@@ -11,31 +11,49 @@ import android.view.View;
 
 import java.io.IOException;
 
+import javax.inject.Inject;
+
+import pe.com.johnson.pablo.limago.LimaGoApplication;
 import pe.com.johnson.pablo.limago.R;
+import pe.com.johnson.pablo.limago.interfaces.SharedPreferencesHelper;
 import pe.com.johnson.pablo.limago.ui.search.SearchActivity;
 import pe.com.johnson.pablo.limago.ui.common.LimaGoActivity;
 import pe.com.johnson.pablo.limago.ui.district.DistrictFragment;
-import pe.com.johnson.pablo.limago.utils.PreferencesManager;
 
 public class LandingActivity extends LimaGoActivity implements LandingView {
 
     private Toolbar toolbar;
 
+    @Inject
+    SharedPreferencesHelper sharedPreferencesApi;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.AppTheme_NoActionBar);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_landing);
+        initializeDagger();
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         setToolbar(toolbar);
         LandingPresenter landingPresenter = new LandingPresenter(this);
-        if (!PreferencesManager.get().isDataLoaded()) {
+
+        ((LimaGoApplication)getApplication()).getNetComponent().inject(landingPresenter);
+        if (!sharedPreferencesApi.isInitialDataLoaded()) {
             loadInitialDataFile(landingPresenter);
         }
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().add(R.id.fragmentContainer, DistrictFragment.newInstance()).commit();
         }
+    }
+
+    @Override
+    protected int getLayoutResID() {
+        return R.layout.activity_landing;
+    }
+
+    private void initializeDagger() {
+        LimaGoApplication application = (LimaGoApplication) getApplication();
+        application.getNetComponent().inject(this);
     }
 
     private void loadInitialDataFile(LandingPresenter landingPresenter) {

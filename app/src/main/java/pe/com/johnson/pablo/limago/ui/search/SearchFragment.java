@@ -16,7 +16,7 @@ import pe.com.johnson.pablo.limago.ui.common.LimaGoFragment;
 
 public class SearchFragment extends LimaGoFragment implements SearchView {
     public static SearchFragment newInstance() {
-        return newInstance();
+        return new SearchFragment();
     }
 
     @Nullable

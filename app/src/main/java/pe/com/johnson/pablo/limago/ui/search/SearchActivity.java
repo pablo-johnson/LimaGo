@@ -25,11 +25,14 @@ public class SearchActivity extends LimaGoActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_search);
-        ButterKnife.bind(this);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.searchContainer, SearchFragment.newInstance()).commit();
         }
+    }
+
+    @Override
+    protected int getLayoutResID() {
+        return R.layout.activity_search;
     }
 
 }

@@ -1,20 +1,25 @@
 package pe.com.johnson.pablo.limago.ui.policeStation.detail;
 
+import javax.inject.Inject;
+
+import io.realm.Realm;
 import pe.com.johnson.pablo.limago.models.PoliceStation;
 import pe.com.johnson.pablo.limago.ui.common.LimaGoPresenter;
-import pe.com.johnson.pablo.limago.utils.RealmClient;
 
 /**
  * Created by Pablo on 1/09/16.
  */
 public class PoliceStationDetailPresenter extends LimaGoPresenter<PoliceStationDetailView> {
 
+    @Inject
+    Realm realm;
+
     protected PoliceStationDetailPresenter(PoliceStationDetailView view) {
         super(view);
     }
 
     public void retrievePoliceStation(String policeStationName) {
-        PoliceStation policeStation = RealmClient.getRealmClient().where(PoliceStation.class).equalTo("name", policeStationName).findFirst();
+        PoliceStation policeStation = realm.where(PoliceStation.class).equalTo("name", policeStationName).findFirst();
         if (policeStation != null) {
             view.updatePoliceStation(policeStation);
         }

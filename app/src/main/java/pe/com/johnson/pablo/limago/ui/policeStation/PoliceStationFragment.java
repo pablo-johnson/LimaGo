@@ -14,6 +14,7 @@ import com.google.android.gms.ads.AdView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.realm.RealmList;
+import pe.com.johnson.pablo.limago.LimaGoApplication;
 import pe.com.johnson.pablo.limago.R;
 import pe.com.johnson.pablo.limago.adapters.PoliceStationAdapter;
 import pe.com.johnson.pablo.limago.interfaces.RecyclerViewClickInterface;
@@ -48,6 +49,7 @@ public class PoliceStationFragment extends LimaGoFragment implements PoliceStati
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         policeStationPresenter = new PoliceStationPresenter(this);
+        ((LimaGoApplication) getActivity().getApplication()).getNetComponent().inject(policeStationPresenter);
     }
 
     @Override

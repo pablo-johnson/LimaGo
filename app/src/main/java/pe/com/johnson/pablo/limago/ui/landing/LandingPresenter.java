@@ -8,16 +8,22 @@ import java.io.InputStream;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
+import javax.inject.Inject;
+
 import io.realm.Realm;
+import pe.com.johnson.pablo.limago.interfaces.SharedPreferencesHelper;
 import pe.com.johnson.pablo.limago.models.District;
 import pe.com.johnson.pablo.limago.ui.common.LimaGoPresenter;
-import pe.com.johnson.pablo.limago.utils.PreferencesManager;
-import pe.com.johnson.pablo.limago.utils.RealmClient;
 
 /**
  * Created by Pablo on 31/08/16.
  */
 public class LandingPresenter extends LimaGoPresenter<LandingView> {
+
+    @Inject
+    Realm realm;
+    @Inject
+    SharedPreferencesHelper sharedPreferencesApi;
 
     protected LandingPresenter(LandingView view) {
         super(view);
@@ -33,7 +39,7 @@ public class LandingPresenter extends LimaGoPresenter<LandingView> {
         Type listType = new TypeToken<ArrayList<District>>() {
         }.getType();
         final ArrayList<District> districtList = new GsonBuilder().create().fromJson(json, listType);
-        RealmClient.getRealmClient().executeTransactionAsync(new Realm.Transaction() {
+        realm.executeTransactionAsync(new Realm.Transaction() {
             @Override
             public void execute(Realm realm) {
                 realm.copyToRealm(districtList);
@@ -41,7 +47,7 @@ public class LandingPresenter extends LimaGoPresenter<LandingView> {
         }, new Realm.Transaction.OnSuccess() {
             @Override
             public void onSuccess() {
-                PreferencesManager.get().setDataLoaded(true);
+                sharedPreferencesApi.setInitialDataLoaded();
                 view.dismissProgressDialog();
             }
         });

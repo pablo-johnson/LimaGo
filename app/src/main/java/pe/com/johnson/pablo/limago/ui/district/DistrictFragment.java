@@ -15,10 +15,12 @@ import com.google.android.gms.ads.AdView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.realm.RealmResults;
+import pe.com.johnson.pablo.limago.LimaGoApplication;
 import pe.com.johnson.pablo.limago.R;
 import pe.com.johnson.pablo.limago.adapters.DistrictAdapter;
 import pe.com.johnson.pablo.limago.interfaces.RecyclerViewClickInterface;
 import pe.com.johnson.pablo.limago.models.District;
+import pe.com.johnson.pablo.limago.ui.common.LimaGoActivity;
 import pe.com.johnson.pablo.limago.ui.common.LimaGoFragment;
 import pe.com.johnson.pablo.limago.ui.policeStation.PoliceStationFragment;
 import pe.com.johnson.pablo.limago.ui.policeStation.detail.PoliceStationDetailFragment;
@@ -47,6 +49,7 @@ public class DistrictFragment extends LimaGoFragment implements DistrictView {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         districtPresenter = new DistrictPresenter(this);
+        ((LimaGoApplication) getActivity().getApplication()).getNetComponent().inject(districtPresenter);
     }
 
     @Override

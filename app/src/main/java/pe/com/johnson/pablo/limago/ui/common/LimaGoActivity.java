@@ -3,6 +3,8 @@ package pe.com.johnson.pablo.limago.ui.common;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
+import butterknife.ButterKnife;
 import pe.com.johnson.pablo.limago.R;
 import pe.com.johnson.pablo.limago.utils.DialogUtils;
 
@@ -17,10 +20,23 @@ import pe.com.johnson.pablo.limago.utils.DialogUtils;
 /**
  * @author Pablo Johnson (pablo.88j@gmail.com)
  */
-public class LimaGoActivity extends AppCompatActivity implements LimaGoFragmentListener {
+public abstract class LimaGoActivity extends AppCompatActivity implements LimaGoFragmentListener {
 
     private AlertDialog errorAlertDialog;
     private ProgressDialog progressDialog;
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(getLayoutResID());
+        bindViews();
+    }
+
+    private void bindViews() {
+        ButterKnife.bind(this);
+    }
+
+    protected abstract int getLayoutResID();
 
     @Override
     public void replaceFragment(Fragment fragment, boolean addToBackStack) {

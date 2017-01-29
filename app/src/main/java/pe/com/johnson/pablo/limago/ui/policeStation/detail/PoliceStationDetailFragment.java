@@ -30,6 +30,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import pe.com.johnson.pablo.limago.LimaGoApplication;
 import pe.com.johnson.pablo.limago.R;
 import pe.com.johnson.pablo.limago.models.District;
 import pe.com.johnson.pablo.limago.models.PoliceStation;
@@ -69,6 +70,7 @@ public class PoliceStationDetailFragment extends LocationFragment implements OnM
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         policeStationPresenter = new PoliceStationDetailPresenter(this);
+        ((LimaGoApplication) getActivity().getApplication()).getNetComponent().inject(policeStationPresenter);
     }
 
     @Override
