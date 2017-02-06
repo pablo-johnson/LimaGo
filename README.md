@@ -8,11 +8,11 @@ For this, I am in the process of implementing a **Clean Architecture** using pat
 
 These are some of the common libraries used:
 
- - Dagger: Used to inject dependencies.
+ - Dagger: Used to inject dependencies (in progress).
  - Butterknife: Automatically bind views and cast to the respective View in the layout.
  - gSon: Used to parse json from data sources.
- - Retrofit: To communicate with web services.
- - RXAndroid: To manage data flow
+ - Retrofit: To communicate with web services (TODO).
+ - RXAndroid: To manage data flow (TODO)
 
 
 References:
