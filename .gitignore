@@ -36,8 +36,11 @@ captures/
 *.iml
 .idea/workspace.xml
 .idea/libraries/
+.idea/*
 
 # Keystore files
 *.jks
 
 .idea/libraries/animated_vector_drawable_24_2_0.xml
+
+.idea/gradle.xml
