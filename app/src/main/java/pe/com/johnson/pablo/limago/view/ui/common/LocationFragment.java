@@ -72,7 +72,9 @@ public abstract class LocationFragment extends LimaGoFragment implements GoogleA
     @Override
     public void onConnected(@Nullable Bundle bundle) {
         Location mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-        onLocationConnected(new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude()));
+        if (mLastLocation != null) {
+            onLocationConnected(new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude()));
+        }
     }
 
     @Override
